@@ -35,14 +35,34 @@ public class Object_1_Object {
 		r = ss.substring(3, 5);
 		System.out.println(r);
 
-	}
-
-	public void ex2() {
 		String name = "Mississippi";
 
 		name.indexOf("i");
-		
-		
+
+		r = ss.toUpperCase();
+		System.out.println(r);
+		r = r.toLowerCase();
+		System.out.println(r);
+
+		String str1 = "test";
+		String str2 = " test ";
+
+		r = str1.trim();
+		r = str2.trim();
+
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(r);
+		System.out.println(str1.equals(r));
+
+		r = String.valueOf(3);
+		System.out.println(r);
+
+		ss = "iu-choa-suji-hani";
+		String[] names = ss.split("-");
+		for (int i = 0; i < names.length; i++) {
+			System.out.println(names[i]);
+		}
 
 	}
 }

@@ -9,6 +9,18 @@ public class StringEx_1 {
 		// 업로드할 파일명을 입력
 		// 이 파일이 이미지인지 아닌지 판단
 		// 이미지가 아니라면 이미지만 업로드 가능..
+		// abc.gif(됨), abc,mp3(안됨) 확장자가 중요
+		// test.abc.gif,abc.mp3
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("파일 형식을 입력하세요");
+		String name = sc.next(); // abc.gif
+
+		int i = name.lastIndexOf(".");
+
+		String result = name.substring(i + 1);
+		System.out.println(result);
+
 	}
 
 	public void ex4() {
