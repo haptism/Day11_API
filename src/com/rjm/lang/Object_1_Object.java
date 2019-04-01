@@ -62,6 +62,14 @@ public class Object_1_Object {
 		String[] names = ss.split("-");
 		for (int i = 0; i < names.length; i++) {
 			System.out.println(names[i]);
+
+			ss = "a,b,c,d,e,f";
+			r = ss.replace('-', ',');
+			System.out.println(r);
+
+			int a = 10;
+			
+
 		}
 
 	}
