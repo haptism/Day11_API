@@ -9,8 +9,8 @@ public class WeatherMain {
 		Weather[] weathers = wi.getWethers();
 
 		for (int i = 0; i < weathers.length; i++) {
-			System.out.println("도시 : " + weathers[i]);
-			System.out.println("상태 : " + weathers[i]);
+			System.out.println("도시 : " + weathers[i].getCity());
+			System.out.println("상태 : " + weathers[i].getState());
 		}
 	}
 }

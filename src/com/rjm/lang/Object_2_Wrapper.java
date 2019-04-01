@@ -26,5 +26,8 @@ public class Object_2_Wrapper {
 		System.out.println(d1 * 2);
 		// 6.4가 나오면 제대로 바뀜
 
+		n2 = Integer.parseInt("20");
+		d1 = Double.parseDouble("3.0");
+
 	}
 }
