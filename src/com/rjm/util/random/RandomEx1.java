@@ -56,13 +56,19 @@ public class RandomEx1 {
 	}
 
 	public void ex2() {
-
 		// 1 ~45 번까지의 숫자를 6개
-
 		Random random = new Random();
 		int[] lotto = new int[6];
 		for (int i = 0; i < lotto.length; i++) {
-			lotto[i] = random.nextInt(44) + 1;
+			lotto[i] = random.nextInt(45) + 1;
+
+			for (int j = 0; j < i; j++) {
+				if (lotto[j] == lotto[i]) {
+					i--;
+					break;
+				}
+			}
+
 		}
 
 		for (int i = 0; i < lotto.length; i++) {
@@ -72,7 +78,7 @@ public class RandomEx1 {
 	}
 
 	public void ex1() {
-		
+
 		// 6개 숫자가 출력
 		// 1~45번 출력
 		
