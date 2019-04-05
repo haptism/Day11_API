@@ -1,4 +1,4 @@
-package com.rjm.util.calender;
+package com.rjm.util.calendar;
 
 import java.util.Calendar;
 
@@ -33,6 +33,11 @@ public class CalendarTest {
 		System.out.println(Calendar.HOUR);
 		System.out.println(Calendar.HOUR_OF_DAY);
 
+		cal = Calendar.getInstance();
+		System.out.println(cal.get(Calendar.DAY_OF_WEEK));
+		
+		
+		
 	}
 
 }
