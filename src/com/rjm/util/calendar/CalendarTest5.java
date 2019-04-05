@@ -16,19 +16,19 @@ public class CalendarTest5 {
 		// 해당월의 마지막 일
 		int max = ca.getActualMaximum(Calendar.DATE); // 날짜가 셋팅 된 Calender 가 가질수 있는 값 = 30
 		// 첫 날의 요일
-		int week = ca.get(Calendar.DAY_OF_WEEK)-1;
+		int week = ca.get(Calendar.DAY_OF_WEEK)-1; // 요일-1
 		System.out.println(week);
 
 		System.out.println("일\t월\t화\t수\t목\t금\t토");
 		System.out.println();
 
 		for (int i = 0; i < week; i++) {
-			System.out.println("\t");
+			System.out.print("\t");
 		}
 
 		for (int i = 1; i <= max; i++) {
 			System.out.print(i + "\t");
-			if (i % 7 == 0) {
+			if ((i+week) % 7 == 0) {
 				System.out.println();
 			}
 		}

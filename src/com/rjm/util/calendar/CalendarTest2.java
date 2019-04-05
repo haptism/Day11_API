@@ -19,8 +19,11 @@ public class CalendarTest2 {
 //		cal.set(Calendar.DATE, d);
 
 		System.out.println("Month : " + cal.get(Calendar.MONTH));
+		
 //		cal.roll(Calendar.DATE, 28);
+		
 		cal.add(Calendar.DATE, 28);
+		
 		System.out.println("Month : " + cal.get(Calendar.MONTH));
 		System.out.println(cal.get(Calendar.DATE));
 
