@@ -15,7 +15,7 @@ public class RandomTest {
 		// System.out.println(num);
 
 		RandomEx1 ex1 = new RandomEx1();
-		ex1.ex2();
+		ex1.ex3();
 
 	}
 
